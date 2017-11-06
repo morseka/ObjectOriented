@@ -32,13 +32,13 @@ public class Race {
     }
 
     /**
-     *
+     * Get the distance
      * @param inDistance
      */
     public void setDistance(double inDistance) { distance = inDistance; }
 
     /**
-     *
+     * Get the race type
      * @param inType
      */
     public void setRaceType(String inType) { raceType = inType; }
@@ -50,8 +50,8 @@ public class Race {
     private void setWinner(int winningCarNumber) { winner = raceCars[winningCarNumber];}
 
     /**
-     *
-     * @return
+     * Either print "Race winner is unknown at this time.", or set value equal to winner when it is found.
+     * @return winner or "Race winner is unknown at this time."
      */
     public String getWinner() {
         String value = "";
@@ -64,14 +64,13 @@ public class Race {
     }
 
     /**
-     *
-     * @return
+     * Get number of cars in race
+     * @return number of cars in race
      */
     public int getCarCount() { return carCount; }
 
     /**
-     *
-     *
+     * Add a car to car count
      */
     public void addCar(Car newCar) {
         if (raceCars == null || carCount == raceCars.length)
@@ -82,14 +81,14 @@ public class Race {
     }
 
     /**
-     *
-     * @return
+     * Get distance of race
+     * @return distance of race
      */
     public double getDistance() { return distance; }
 
     /**
-     *
-     * @return
+     * Get the type of race
+     * @return race type
      */
     public String getRaceType() { return raceType; }
 
@@ -106,8 +105,8 @@ public class Race {
     }
 
     /**
-     *
-     * @return
+     * Prints the type of race, the distance, and the winner of the race.
+     * @return description
      */
     public String toString() {
         String description;
@@ -118,7 +117,7 @@ public class Race {
     }
 
     /**
-     *
+     * The Race
      */
     public void runRace() {
         //Create an object for the car

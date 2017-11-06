@@ -1,0 +1,11 @@
+package Testing;
+
+/**
+ * Created by Kolty on 11/4/17.
+ */
+    public class Demo {
+        public static int counter = 0;
+        public int increase() {
+            return counter++;
+        }
+    }
